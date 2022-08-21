@@ -52,7 +52,7 @@
     @apply max-h-0;
   }
   .navbar.active {
-    @apply max-h-[120px];
+    @apply max-h-[122px];
   }
 
   @screen md {
@@ -81,5 +81,19 @@
 
   .link {
     @apply duration-200 hover:opacity-70;
+  }
+
+  /* title 下底線 */
+  .title-underline {
+    @apply relative after:absolute after:bottom-0 after:w-[50px] after:h-[3px] after:bg-primary;
+  }
+
+  /* 漸層色 */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-b from-secondary to-primary;
+  }
+
+  .translate-middle {
+    @apply -translate-x-1/2 -translate-y-1/2;
   }
 }
