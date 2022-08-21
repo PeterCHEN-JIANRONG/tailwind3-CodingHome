@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
+  <title>Coding Home - 全台最豐富的程式家教|超過 100 種專業課程、免費諮詢</title>
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,38 +17,124 @@
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body>
-  <header class="header">
-    這是 header
-    <div class="w-20">
-      <img src="./assets/images/logo.svg" alt="" class="">
+<body class="">
+  <header class="z-10 fixed w-full bg-dark-100
+  before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-1/2 before:bg-primary
+  after:absolute after:right-0 after:bottom-0 after:h-0.5 after:w-1/2 after:bg-secondary">
+    <div class="container py-6">
+      <div class="flex justify-between items-center">
+        <h1 class="">
+          <a href="#" class="block h-6 w-6 bg-[url('../images/logo-mobile.svg')] bg-contain bg-center bg-no-repeat indent-[101%] overflow-hidden whitespace-nowrap
+          md:h-[42px] md:w-[174px] md:bg-[url('../images/logo.svg')]">
+            Coding Home
+          </a>
+        </h1>
+        <span id="menuBtn" class="block md:hidden material-symbols-outlined text-primary cursor-pointer">
+          drag_handle
+        </span>
+        <nav class="navbar duration-300 overflow-hidden w-full absolute top-full left-0 bg-dark-100
+        md:relative md:w-auto">
+          <ul class="flex flex-col md:flex-row text-white text-center">
+            <li><a href="#" class="link block px-6 py-2 border-b border-white md:border-none">首頁</a></li>
+            <li><a href="#" class="link block px-6 py-2 border-b border-white md:border-none">課程介紹</a></li>
+            <li>
+              <a href="#" class="link block px-6 py-2">
+                <div class="flex justify-center items-center gap-1.5">
+                  <span class="material-symbols-outlined">
+                    account_circle
+                  </span>
+                  登入
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <a href="#" class="btn btn-primary">我是誰</a>
-<p class="text-3xl font-bold text-blue-500 underline">This is a demo.</p>
-<p class="text-3xl font-bold text-blue-500 underline">我是誰我是誰我是誰我是誰</p>
-<div class="w-10 h-10 bg-primary"></div>
-<div class="w-10 h-10 bg-secondary"></div>
-<div class="w-10 h-10 bg-gray"></div>
-<div class="w-10 h-10 bg-gray-100"></div>
-<div class="w-10 h-10 bg-gray-200"></div>
-<div class="w-10 h-10 bg-gray-300"></div>
-<div class="w-10 h-10 bg-gray-400"></div>
-<div class="w-10 h-10 bg-gray-500"></div>
-<div class="w-10 h-10 bg-gray-600"></div>
-<div class="w-10 h-10 bg-gray-700"></div>
-<div class="w-10 h-10 bg-gray-800"></div>
-<div class="w-10 h-10 bg-gray-900"></div>
-<div class="w-10 h-10 bg-dark"></div>
-<div class="w-10 h-10 bg-dark-100"></div>
-<div class="w-10 h-10 bg-dark-200"></div>
-<div class="w-10 h-10 bg-dark-300"></div>
-<div class="w-10 h-10 bg-dark-400"></div>
-<div class="w-10 h-10 bg-dark-500"></div>
+  <main class="pt-[72px] md:pt-[90px]">
+    
+<!-- banner -->
+<section class="flex justify-center items-center h-[336px] md:h-[680px] bg-[url('../images/bg_home_mobile.jpg')] md:bg-[url('../images/bg_home.jpg')] bg-cover bg-center px-3">
+  <div class="w-full md:max-w-[650px] px-3 py-8 md:py-[52px] border border-white text-white text-center relative
+  before:absolute before:h-2 before:w-2 before:bg-white before:left-0 before:top-0 before:translate-middle
+  after:absolute after:h-2 after:w-2 after:bg-white after:left-full after:top-0 after:translate-middle">
+    <h2 class="text-2xl md:text-5xl font-bold mb-6">
+      <span class="text-gradient">全台最豐富的程式家教</span>
+      <br>在實踐中化理想為現實
+    </h2>
+    <p class="text-sm md:text-lg
+    before:absolute before:h-2 before:w-2 before:bg-white before:left-0 before:top-full before:translate-middle
+    after:absolute after:h-2 after:w-2 after:bg-white after:left-full after:top-full after:translate-middle">
+      全台最專業師資｜到府程式家教｜客製化課程
+    </p>
+  </div>
+</section>
 
-  <footer class="footer">
-    footer
+<!-- 手把手帶你 親自到家教到會 -->
+<section class="bg-dark-100 py-10 md:py-20">
+  <div class="container">
+    <div class="flex flex-col md:flex-row md:items-center md:-mx-3">
+      <div class="md:w-1/4 md:px-3">
+        <h2 class="text-white font-bold title-underline 
+        text-2xl text-center after:left-1/2 after:-translate-x-1/2 pb-4 mb-6 
+        md:text-3xl md:text-left md:after:left-0 md:after:translate-x-0 md:mb-0">
+          手把手帶你<br>親自到家教到會
+        </h2>
+      </div>
+      <div class="md:w-3/4 md:px-3">
+        <ul class="flex flex-col gap-y-6 md:flex-row md:-mx-3 text-center text-white md:text-gray-600">
+          <li class="md:w-1/3 md:px-3">
+            <div class="group bg-dark-300 duration-300 rounded-xl px-4 py-12 
+            md:hover:ring-1 md:ring-primary
+            md:bg-transparent md:hover:bg-dark-300">
+              <span class="block material-symbols-outlined text-5xl font-settings-bold text-gradient md:text-gray-600 md:group-hover:text-gradient duration-300 mb-6">
+                code
+              </span>
+              <h3 class="text-lg font-bold mb-4 md:group-hover:text-white duration-300">超過 100 種專業課程</h3>
+              <p class="text-lg md:group-hover:text-white duration-300">學習標準化的電腦形式語言<br>培養運算思維和邏輯素養</p>
+            </div>
+          </li>
+          <li class="md:w-1/3 md:px-3">
+            <div class="group bg-dark-300 duration-300 rounded-xl px-4 py-12 
+            md:hover:ring-1 md:ring-primary
+            md:bg-transparent md:hover:bg-dark-300">
+              <span class="block material-symbols-outlined text-5xl font-settings-bold text-gradient md:text-gray-600 md:group-hover:text-gradient duration-300 mb-6">
+                rocket_launch
+              </span>
+              <h3 class="text-lg font-bold mb-4 md:group-hover:text-white duration-300">高效學習</h3>
+              <p class="text-lg md:group-hover:text-white duration-300">客製化專屬課表<br>讓學習變簡單</p>
+            </div>
+          </li>
+          <li class="md:w-1/3 md:px-3">
+            <div class="group bg-dark-300 duration-300 rounded-xl px-4 py-12 
+            md:hover:ring-1 md:ring-primary
+            md:bg-transparent md:hover:bg-dark-300">
+              <span class="block material-symbols-outlined text-5xl font-settings-bold text-gradient md:text-gray-600 md:group-hover:text-gradient duration-300 mb-6">
+                location_on
+              </span>
+              <h3 class="text-lg font-bold mb-4 md:group-hover:text-white duration-300">指定地點</h3>
+              <p class="text-lg md:group-hover:text-white duration-300">專業老師到你指定的地點<br>一對一高效學習</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ring outline 寫法 -->
+<!-- md:hover:ring-1 md:ring-primary -->
+<!-- md:hover:outline md:outline-1 md:outline-primary -->
+<!-- <a href="#" class="btn btn-primary">我是誰</a> -->
+  </main>
+
+  <footer class="bg-dark-500">
+    <div class="container py-4 md:py-6">
+      <p class="text-gray-800 text-center text-xs md:text-base">Coding Home © 2022 All Rights Reserved</p>
+    </div>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
