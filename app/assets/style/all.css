@@ -28,9 +28,11 @@
     @apply text-white bg-gradient-to-r from-primary to-secondary;
   }
 
-  .btn-primary:hover {
-    /* @apply bg-gradient-to-l bg-[center_left_124px] ; */
-    @apply bg-gradient-to-l;
+  @screen lg {
+    .btn-primary:hover {
+      /* @apply bg-gradient-to-l bg-[center_left_124px] ; */
+      @apply bg-gradient-to-l;
+    }
   }
 
   .btn-sm {
