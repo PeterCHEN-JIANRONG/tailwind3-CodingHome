@@ -809,9 +809,6 @@ select {
 .h-\[380px\] {
   height: 380px;
 }
-.h-8 {
-  height: 2rem;
-}
 .h-20 {
   height: 5rem;
 }
@@ -877,6 +874,9 @@ select {
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-\[18px\] {
+  gap: 18px;
 }
 .gap-1\.5 {
   gap: 0.375rem;
@@ -1214,18 +1214,19 @@ select {
 .material-symbols-outlined {
     font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
   }
-/* swiper pagination */
-.swiper-pagination .swiper-pagination-bullet {
+/* feedback swiper pagination */
+.feedback .swiper-pagination .swiper-pagination-bullet {
   --tw-bg-opacity: 1;
   background-color: rgb(98 219 84 / var(--tw-bg-opacity));
   opacity: 1;
 }
-.swiper-pagination .swiper-pagination-bullet-active {
+.feedback .swiper-pagination .swiper-pagination-bullet-active {
   width: 1rem;
   border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(98 219 84 / var(--tw-bg-opacity));
-  opacity: 1;
+}
+.feedback .swiper-pagination {
+  position: static;
+  width: auto;
 }
 
 /* 自訂 base */

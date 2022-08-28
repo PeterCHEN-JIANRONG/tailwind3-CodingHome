@@ -41,7 +41,11 @@ $(document).ready(function () {
     loop: true,
     pagination: {
       el: ".feedback .swiper-pagination",
-      clickable: false
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".feedback .navigation-next",
+      prevEl: ".feedback .navigation-prev"
     }
   });
   var swiperFeedback = new Swiper(".swiper-feedback", {
