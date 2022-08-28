@@ -17,7 +17,7 @@
   .btn {
     font-size: 20px;
     /* @apply inline-block py-1.5 px-3 uppercase font-medium; */
-    @apply inline-block py-2 px-8 duration-300;
+    @apply inline-block py-2 px-8 text-lg duration-300;
   }
   
   .btn:focus {
@@ -36,19 +36,23 @@
   }
 
   .btn-sm {
-    font-size: 16px;
-    @apply py-1 px-4;
+    /* font-size: 16px; */
+    @apply text-base py-1 px-4;
   }
 
   .btn-lg {
-    font-size: 24px;
-    @apply py-4 px-10;
+    /* font-size: 24px; */
+    @apply text-2xl py-4 px-10;
   }
 
-  /* icon 預設值，不知道放哪比較好 */
-  .material-symbols-outlined {
-    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  .btn-outline-light {
+    @apply text-white ring-1 ring-white;
   }
+
+  .btn-outline-light:hover {
+    @apply text-black bg-white;
+  }
+
 
   .navbar {
     @apply max-h-0;
@@ -101,5 +105,10 @@
 
   .hover-300 {
     @apply transition-all duration-300;
+  }
+
+  /* icon 預設值，不知道放哪比較好 */
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
   }
 }
