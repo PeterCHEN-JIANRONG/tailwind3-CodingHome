@@ -111,4 +111,13 @@
   .material-symbols-outlined {
     font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
   }
+
+  /* swiper pagination */
+  .swiper-pagination .swiper-pagination-bullet {
+    @apply opacity-100 bg-primary;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+    @apply w-4 opacity-100 bg-primary rounded-full;
+  }
 }

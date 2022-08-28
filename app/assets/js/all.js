@@ -41,4 +41,13 @@ $(document).ready(() => {
       },
     },
   });
+
+  const swiperFeedback = new Swiper(".swiper-feedback", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 });
