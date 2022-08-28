@@ -19,6 +19,7 @@ module.exports = {
       colors:{
         primary:'#62DB54',
         secondary:'#09ACF5',
+        cyan: '#494755',
         'dark': {
           DEFAULT: '#000000',
           '100': '#2D2D2D',

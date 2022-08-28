@@ -19,7 +19,7 @@ $(document).ready(() => {
   
   // swiper 
   // 你想要學習的程式， 都在這裡
-  var swiper = new Swiper(".programSwiper", {
+  const swiperProgram = new Swiper(".swiper-program", {
     slidesPerView: "auto",
     spaceBetween: 8,
     speed:1000,
