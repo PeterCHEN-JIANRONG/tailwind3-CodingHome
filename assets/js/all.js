@@ -20,7 +20,7 @@ $(document).ready(function () {
     spaceBetween: 8,
     speed: 1000,
     freeMode: true,
-    centeredSlides: true,
+    centeredSlides: false,
     loop: true,
     autoplay: {
       delay: 2500,
