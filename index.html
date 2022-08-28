@@ -168,7 +168,8 @@
   text-2xl md:text-3xl after:left-1/2 after:-translate-x-1/2 pb-4 mb-6 md:mb-12">
     你想要學習的程式，<br class="md:hidden">都在這裡
   </h2>
-  <div class="swiper programSwiper">
+  <!-- swiperProgram -->
+  <div class="swiper swiper-program">
     <div class="swiper-wrapper">
       <div class="swiper-slide w-auto">
         <div class="inline-block lg:hover:bg-dark-400 border border-white rounded-lg p-4 md:py-6 md:px-8">
@@ -455,15 +456,131 @@
           lg:after:absolute lg:after:hover-300 lg:after:opacity-0 lg:after:bottom-0 lg:after:right-0 lg:after:w-8 lg:after:h-8 lg:after:border-r lg:after:border-b lg:after:border-primary lg:after:rounded-br-xl lg:group-hover:after:opacity-100 lg:group-hover:after:-bottom-8 lg:group-hover:after:-right-8"></span>
         </article>
       </li>
-
     </ul>
   </div>
 </section>
 
-<!-- ring outline 寫法 -->
+
+<section class="bg-black py-10 md:py-20 md:bg-[url('../images/bg_share.jpg')] bg-cover bg-center">
+  <div class="container">
+    <h2 class="text-white font-bold title-underline text-center
+    text-2xl md:text-3xl after:left-1/2 after:-translate-x-1/2 pb-4 mb-9 lg:mb-[60px]">
+      專屬你的學習課程<br>超過 3000 位學員得到了<br class="md:hidden">程式超能力
+    </h2>
+    <div class="feedback flex flex-col lg:flex-row lg:justify-center lg:items-end">
+      <div class="contents lg:block">
+
+        <!-- swiperFeedbackImg -->
+        <div class="lg:max-w-[537px] mb-10 lg:mb-[14px]">
+          <div class="swiper swiper-feedback-img">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="pt-3 pb-1">
+                  <div class="relative z-0 text-right
+                  before:absolute before:-z-10 before:top-0 before:left-0 before:h-full before:w-[calc(100%-12px)] before:border before:border-1 before:border-gray-900 before:rounded-3xl ">
+                    <img class="rounded-3xl w-[calc(100%-12px)] h-[380px] object-cover object-center inline-block -translate-y-3" src="./assets/images/share.jpg" alt="share">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pt-3 pb-1">
+                  <div class="relative z-0 text-right
+                  before:absolute before:-z-10 before:top-0 before:left-0 before:h-full before:w-[calc(100%-12px)] before:border before:border-1 before:border-gray-900 before:rounded-3xl ">
+                    <img class="rounded-3xl w-[calc(100%-12px)] h-[380px] object-cover object-center inline-block -translate-y-3" src="./assets/images/info01.jpg" alt="share">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pt-3 pb-1">
+                  <div class="relative z-0 text-right
+                  before:absolute before:-z-10 before:top-0 before:left-0 before:h-full before:w-[calc(100%-12px)] before:border before:border-1 before:border-gray-900 before:rounded-3xl ">
+                    <img class="rounded-3xl w-[calc(100%-12px)] h-[380px] object-cover object-center inline-block -translate-y-3" src="./assets/images/info02.jpg" alt="share">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="pt-3 pb-1">
+                  <div class="relative z-0 text-right
+                  before:absolute before:-z-10 before:top-0 before:left-0 before:h-full before:w-[calc(100%-12px)] before:border before:border-1 before:border-gray-900 before:rounded-3xl ">
+                    <img class="rounded-3xl w-[calc(100%-12px)] h-[380px] object-cover object-center inline-block -translate-y-3" src="./assets/images/info03.jpg" alt="share">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative order-last h-8">
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="mb-8 lg:mb-0 lg:max-w-[416px] lg:-ml-8">
+
+        <!-- swiperFeedback -->
+        <div class="swiper swiper-feedback">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="pt-7 lg:pt-[50px]">
+                <div class="z-20 bg-white text-cyan relative rounded-3xl rounded-bl-none p-6 lg:p-8">
+                  <img class="absolute -top-7 right-6 h-20 w-20 rounded-full lg:h-[100px] lg:w-[100px] lg:right-8 lg:-top-[50px]" src="./assets/images/student01.jpg" alt="student01">
+                  <h3 class="text-lg font-bold mb-2">老師很有耐心</h3>
+                  <p>老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pt-7 lg:pt-[50px]">
+                <div class="z-20 bg-white text-cyan relative rounded-3xl rounded-bl-none p-6 lg:p-8">
+                  <img class="absolute -top-7 right-6 h-20 w-20 rounded-full lg:h-[100px] lg:w-[100px] lg:right-8 lg:-top-[50px]" src="./assets/images/student02.jpg" alt="student01">
+                  <h3 class="text-lg font-bold mb-2">老師很有耐心</h3>
+                  <p>老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pt-7 lg:pt-[50px]">
+                <div class="z-20 bg-white text-cyan relative rounded-3xl rounded-bl-none p-6 lg:p-8">
+                  <img class="absolute -top-7 right-6 h-20 w-20 rounded-full lg:h-[100px] lg:w-[100px] lg:right-8 lg:-top-[50px]" src="./assets/images/student03.jpg" alt="student01">
+                  <h3 class="text-lg font-bold mb-2">老師很有耐心</h3>
+                  <p>老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="pt-7 lg:pt-[50px]">
+                <div class="z-20 bg-white text-cyan relative rounded-3xl rounded-bl-none p-6 lg:p-8">
+                  <img class="absolute -top-7 right-6 h-20 w-20 rounded-full lg:h-[100px] lg:w-[100px] lg:right-8 lg:-top-[50px]" src="./assets/images/student04.jpg" alt="student01">
+                  <h3 class="text-lg font-bold mb-2">老師很有耐心</h3>
+                  <p>老師手把手的細心教學，用手繪圖，以淺顯易懂的方式，讓零網頁基礎的我也能快速了解網頁的架構與原理，學網頁變得有趣多了！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-black py-10 md:py-20">
+  <div class="container">
+    <div class="flex flex-col items-center gap-y-6 lg:flex-row bg-dark-300 rounded-3xl py-10 px-6 md:p-12">
+      <span class="material-symbols-outlined text-[80px] lg:text-[100px] text-gray-800 lg:mr-12">
+        menu_book
+      </span>
+      <div class="text-white text-center lg:text-left lg:grow">
+        <h2 class="text-2xl lg:text-3xl font-bold mb-6 lg:mb-2">加入我們成為導師</h2>
+        <p class="">歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</p>
+      </div>
+      <button type="button" class="btn btn-outline-light rounded-lg">
+        立即預約
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ring / outline 寫法 -->
 <!-- md:hover:ring-1 md:ring-primary -->
 <!-- md:hover:outline md:outline-1 md:outline-primary -->
-<!-- <a href="#" class="btn btn-primary">我是誰</a> -->
   </main>
 
   <footer class="bg-dark-500">
