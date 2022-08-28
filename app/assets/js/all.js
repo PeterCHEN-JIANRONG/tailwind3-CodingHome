@@ -42,12 +42,28 @@ $(document).ready(() => {
     },
   });
 
-  const swiperFeedback = new Swiper(".swiper-feedback", {
+  const swiperFeedbackImg = new Swiper(".swiper-feedback-img", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".feedback .swiper-pagination",
+      clickable: false,
     },
   });
+
+  const swiperFeedback = new Swiper(".swiper-feedback", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    speed:1000,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter:true,
+    },
+  });
+
+  swiperFeedback.controller.control = [swiperFeedbackImg];
+  swiperFeedbackImg.controller.control = [swiperFeedback];
 });
