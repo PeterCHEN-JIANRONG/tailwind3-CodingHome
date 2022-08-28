@@ -24,7 +24,7 @@ $(document).ready(() => {
     spaceBetween: 8,
     speed:1000,
     freeMode: true,
-    centeredSlides: true,
+    centeredSlides: false,
     loop: true,
     autoplay: {
       delay: 2500,
@@ -48,7 +48,11 @@ $(document).ready(() => {
     loop: true,
     pagination: {
       el: ".feedback .swiper-pagination",
-      clickable: false,
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".feedback .navigation-next",
+      prevEl: ".feedback .navigation-prev",
     },
   });
 
