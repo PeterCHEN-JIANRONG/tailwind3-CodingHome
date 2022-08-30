@@ -5,14 +5,14 @@ $(document).ready(() => {
 
   // navbar add .active
   $("header #menuBtn").click(function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     $("header .navbar").toggleClass("active");
     // $(this).addClass("active");
   });
 
   // close navbar
   $("header .navbar .link").click(function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     $("header .navbar").removeClass("active");
   });
 
