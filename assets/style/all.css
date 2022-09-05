@@ -573,7 +573,6 @@ select {
   outline: 1px auto -webkit-focus-ring-color;
 }
   html {
-    font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
     font-family: 'Azeret Mono', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, system-ui, monospace, sans-serif;
@@ -1235,30 +1234,35 @@ select {
        -o-transition-duration: 300ms;
           transition-duration: 300ms;
 }
-/* icon 預設值，不知道放哪比較好 */
-.material-symbols-outlined {
-    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
-  }
-/* feedback swiper pagination */
-.feedback .swiper-pagination .swiper-pagination-bullet {
-  --tw-bg-opacity: 1;
-  background-color: rgb(98 219 84 / var(--tw-bg-opacity));
-  opacity: 1;
-}
-.feedback .swiper-pagination .swiper-pagination-bullet-active {
-  width: 1rem;
-  border-radius: 9999px;
-}
-.feedback .swiper-pagination {
-  position: static;
-  width: auto;
-}
 
 /* 自訂 base */
 
 /* 自訂 components */
 
 /* 自訂 utilities */
+
+
+/* icon 預設值，不知道放哪比較好 */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* feedback swiper pagination */
+.feedback .swiper-pagination .swiper-pagination-bullet {
+  --tw-bg-opacity: 1;
+  background-color: rgb(98 219 84 / var(--tw-bg-opacity));
+  opacity: 1;
+}
+
+.feedback .swiper-pagination .swiper-pagination-bullet-active {
+  width: 1rem;
+  border-radius: 9999px;
+}
+
+.feedback .swiper-pagination {
+  position: static;
+  width: auto;
+}
 
 .before\:absolute::before {
   content: var(--tw-content);
@@ -2172,6 +2176,12 @@ select {
 
   .xl\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .xl\:flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .xl\:w-10\/12 {
